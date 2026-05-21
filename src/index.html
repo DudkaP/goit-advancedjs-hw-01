@@ -2,19 +2,29 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
+    <title>Тема 2. Модульність коду.</title>
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <load src="./partials/header.html" icon-path="img/sprite.svg#logo" />
 
-    <main>
-      <!-- Loads the specified .html file -->
-      <load src="./partials/vite-promo.html" />
-      <load src="./partials/badges.html" />
-    </main>
+	<main>
+		<div class="container">
+			<h1 class="main-title">
+				<span class="main-title-gradient">Homework</span> JavaScript
+			</h1>
+			<p>
+				This project contains two homework tasks for working with DOM, modules, and browser storage.
+				Use the links below to open the gallery task and the feedback form task.
+			</p>
+			<ul class="home-links">
+				<li><a href="./1-gallery.html">Task 1: Image gallery with SimpleLightbox</a></li>
+				<li><a href="./2-form.html">Task 2: Feedback form with localStorage</a></li>
+			</ul>
+		</div>
+	</main>
+
 
     <load src="./partials/footer.html" />
 
