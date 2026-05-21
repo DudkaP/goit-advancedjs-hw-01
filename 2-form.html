@@ -2,13 +2,15 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Тема 2. Модульність коду.</title>
-    <script type="module" crossorigin src="/goit-advancedjs-hw-01/assets/styles-BOt_E2YZ.js"></script>
+    <title>Form</title>
+    <script type="module" crossorigin src="/goit-advancedjs-hw-01/2-form.js"></script>
+    <link rel="modulepreload" crossorigin href="/goit-advancedjs-hw-01/assets/styles-BOt_E2YZ.js">
     <link rel="stylesheet" crossorigin href="/goit-advancedjs-hw-01/assets/styles-BM63uQ0z.css">
   </head>
   <body>
-    <header class="header">
+<header class="header">
   <div class="container">
     <nav class="nav">
       <a class="nav-logo" href="./index.html" aria-label="Site logo">
@@ -18,7 +20,7 @@
       </a>
       <ul class="nav-list">
 		<li class="nav-item">
-			<a class="nav-link {=$highlight-act}" href="./1-gallery.html">Gallery</a>
+			<a class="nav-link active" href="./1-gallery.html">Gallery</a>
 		</li>
 		<li class="nav-item">
 			<a class="nav-link {=$highlight-curr}" href="./2-form.html">Form</a>
@@ -29,24 +31,25 @@
 </header>
 
 
-	<main>
-		<div class="container">
-			<h1 class="main-title">
-				<span class="main-title-gradient">Homework</span> JavaScript
-			</h1>
-			<p>
-				This project contains two homework tasks for working with DOM, modules, and browser storage.
-				Use the links below to open the gallery task and the feedback form task.
-			</p>
-			<ul class="home-links">
-				<li><a href="./1-gallery.html">Task 1: Image gallery with SimpleLightbox</a></li>
-				<li><a href="./2-form.html">Task 2: Feedback form with localStorage</a></li>
-			</ul>
-		</div>
-	</main>
+<main>
+	<div class="container">
+		<a class="back-link" href="./index.html">Go back</a>
 
+		<form class="feedback-form" autocomplete="off">
+			<label>
+				Email
+				<input type="email" name="email" autofocus />
+			</label>
+			<label>
+				Message
+				<textarea name="message" rows="8"></textarea>
+			</label>
+			<button type="submit">Submit</button>
+		</form>
+	</div>
+</main>
 
-    <footer class="footer">
+<footer class="footer">
   <div class="container">
     <p class="footer-desc">
       Made with ✨ by
@@ -61,7 +64,6 @@
     </p>
   </div>
 </footer>
-
 
   </body>
 </html>
